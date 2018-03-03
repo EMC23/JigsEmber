@@ -1,4 +1,4 @@
-@import 'variables';
+@import "_settings";
 
 html, body {
   background: $black;
@@ -81,18 +81,10 @@ header {
 
 }
 
-.body {
-  padding: 1rem 0;
-}
-
-.wrapper {
-  width: 100%;
-}
 
 .wrapper.full {
-  background: $grey-light;
+  background: $black-rich;
 }
-
 
 h1 {
   font-family: $neutron;

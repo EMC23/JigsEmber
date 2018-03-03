@@ -1,48 +1,19 @@
+// Utilities
 @import 'normalize';
-@import 'global';
-@import 'grid';
+
+// Patterns
 @import 'flexbox';
-@import 'card';
-@import 'media';
-@import 'button';
-@import 'button';
-@import 'search';
+@import 'grid';
 @import 'input';
 
-// the ordering above is not working as I want. I need to import _variables into any partial that depends on it (see global, card). I should be able to import it here first
+// Components
+@import 'button';
+@import 'card';
+@import 'header';
+@import 'media';
+@import 'search';
 
-@mixin container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+@import 'global';
 
-body {
-  font-size: 16px;
-}
-
-
-:global {
-
-  a:link {
-    text-decoration: none;
-    color: $black;
-  }
-  a:visited {
-    text-decoration: none;
-    color: lighten($grey-dark, 5%);
-  }
-  a:hover {
-    text-decoration: none;
-    color: $grey-dark;
-  }
-
-  .container,
-  header .menu {
-    @include container;
-  }
-}
 
 
