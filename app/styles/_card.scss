@@ -5,7 +5,7 @@
   position: relative;
   padding: 1rem;
   border-radius: 2px;
-  background: $white;
+  background: $black-rich;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
@@ -32,7 +32,7 @@ h4.is-promoted {
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
-    background: $orange;
+    background: $dark;
     color: $white;
     padding: 0 0.5rem;
   }
@@ -78,14 +78,14 @@ h4.is-promoted {
   line-height: 2.5rem;
   padding: 0 1rem;
   border-radius: 2px;
-  background-color: $orange;
+  background-color: $teal;
   &:link,
   &:visited {
     color: white;
   }
   &:hover {
     color: white;
-    background-color: darken($orange, 8%);
+    background-color: darken($teal, 8%);
   }
 }
 

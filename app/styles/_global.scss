@@ -1,9 +1,13 @@
 @import 'variables';
 
-
+html, body {
+  background: $black;
+  color: $white-off;
+}
 
 .shelf {
-  background: $grey-light;
+  background: $black-rich;
+  color: $white-off;
   width: 100%;
   padding: 1rem 0;
 
@@ -15,21 +19,22 @@
 
   .login {
     font-size: 18px;
-    font-family: $roboto;
+    font-family: $neutron;
   }
 
 }
 
 
 header {
-  background: $white;
+  background: $black-rich;
+  color: $white-off;
   width: 100%;
 
   h1 {
     margin: 0 0 1rem;
     font-size: 24px;
     font-weight: 400;
-    color: $black;
+    color: $white-grey;
     span {
       font-size: 16px;
       text-transform: uppercase;
@@ -54,15 +59,15 @@ header {
     display: inherit;
     flex-wrap: wrap;
     justify-content: flex-start;
-    font-family: $roboto;
+    font-family: $neutron;
 
     a {
       display: block;
       padding: 0 1rem 1rem 0;
-      color: $black;
+      color: $white-off;
 
       &.active {
-        color: $orange;
+        color: $teal;
         position: relative;
         &::after {
           content: "●";
@@ -90,25 +95,25 @@ header {
 
 
 h1 {
-  font-family: $roboto;
+  font-family: $neutron;
   font-weight: 500;
 }
 
 h2 {
-  color: $grey-dark;
-  font-family: $roboto;
+  color: $teal-dark;
+  font-family: $neutron;
   font-weight: 500;
 }
 
 h3 {
-  color: $grey-dark;
-  font-family: $roboto;
+  color: $teal-dark;
+  font-family: $neutron;
   font-weight: 500;
 }
 
 h4 {
-  color: $grey-dark;
-  font-family: $roboto;
+  color: $white-grey;
+  font-family: $neutron;
   font-weight: 500;
 }
 
@@ -143,7 +148,7 @@ ul.tags {
 
 
 .collections ul {
-  font-family: $roboto;
+  font-family: $neutron;
 
   li {
     padding: 0 0 1rem;
@@ -162,7 +167,8 @@ ul.tags {
 
 .footer,
 .collections {
-  background: $grey-light;
+  background: $dark;
+  color: $white-off;
 }
 
 .subscribe {
@@ -172,7 +178,8 @@ ul.tags {
 .highlight,
 .banner {
   padding: 2rem 0;
-  background: $grey-med;
+  background: $dark;
+  color: $white-off;
 
   h3 {
     font-size: 200%;
@@ -186,31 +193,15 @@ ul.tags {
 
 .features {
   padding: 2rem 0;
-  background: $grey-bg;
+  background: $dark;
+  color: $white-off;
 }
-
 
 .page-title h1 {
   margin: 0 0 2rem;
 }
 
-.recipe-specs .grid-item {
-  text-align: center;
-  padding: 1rem 0;
-
-  svg {
-    fill: $grey-dark;
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.recipe-image {
-  position: relative;
-  overflow: hidden;
-}
-
 .highlight.full {
-  background: $grey-light url(/assets/images/open-book-outline.svg) 8% 15% no-repeat;
-  background-size: 30%;
+  background: $dark;
+  color: $white-off;
 }

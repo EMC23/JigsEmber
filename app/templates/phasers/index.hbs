@@ -1,11 +1,16 @@
 <div class="wrapper">
     <div class="container article">
-        <h2>Phasers 9</h2>
-        <ul class="grid">
-            {{#each node--phaser as |phaser|}}
-                x <h1>{{phaser.title}}</h1>
+        <h2>Phasers</h2>
+        <div class="grid">
+            {{#each phasers as |phaser|}}
+                <h1>{{phaser.title}} - {{phaser.emc23_ref}}</h1>
+                <div class="{{phaser.emc23_ref}}">
+
+                  <div id="world"></div>
+
+                </div>
             {{/each}}
-        </ul>
+        </div>
     </div>
 </div>
 {{outlet}}

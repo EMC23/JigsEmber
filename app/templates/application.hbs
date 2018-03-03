@@ -2,15 +2,10 @@
 
 {{!-- the content area displays here for the front page only --}}
 {{#if isIndexRoute}}
-    <div class="body">
-        index
-        {{outlet}}
-    </div>
+  index
+  {{outlet}}
 {{/if}}
 
 {{#unless isIndexRoute}}
-    other
-    <div class="body">
-        {{outlet}}
-    </div>
+  {{outlet}}
 {{/unless}}
