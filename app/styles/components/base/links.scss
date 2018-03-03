@@ -1,6 +1,6 @@
 @import "_settings";
 
-body {
+* {
   @include link ($teal, $teal-light-alt, $teal-light, $white, inherit);
 }
 

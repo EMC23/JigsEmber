@@ -1,16 +1,22 @@
-<div class="wrapper">
-    <div class="container">
-        <h2>Phasers</h2>
-        <div class="grid">
-            {{#each phasers as |phaser|}}
-                <h1>{{phaser.title}} - {{phaser.emc23_ref}}</h1>
-                <div class="{{phaser.emc23_ref}}">
+<div class="wrapper full">
+  <div class="container">
+    <div class="grid grid-map">
+      <main class="grid-item" role="main">
+        {{#each phasers as |phaser|}}
+          <h1>{{phaser.title}} - {{phaser.emc23_ref}}</h1>
+          <div id="world" class="{{phaser.emc23_ref}}"></div>
+        {{/each}}
+      </main>
 
-                  <div id="world"></div>
+      <aside class="grid-item sidebar_first" role="complementary">
+        {{ block-console }}
+      </aside>
 
-                </div>
-            {{/each}}
-        </div>
+      <aside class="grid-item sidebar_second" role="complementary">
+
+      </aside>
+
     </div>
+  </div>
 </div>
 {{outlet}}

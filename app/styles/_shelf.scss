@@ -1,0 +1,21 @@
+@import "_settings";
+
+.shelf {
+  background: $black-rich;
+  color: $white-off;
+  width: 100%;
+  padding: 1rem 0;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .login {
+    font-size: 18px;
+    font-family: $neutron;
+  }
+
+}
+

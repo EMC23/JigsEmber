@@ -1,7 +1,11 @@
 // Utilities
 @import 'normalize';
+@import 'components/base/headings';
 
 // Patterns
+@import url('//fonts.googleapis.com/css?family=Roboto+Slab');
+
+@import 'components/page/page';
 @import 'flexbox';
 @import 'grid';
 @import 'input';

@@ -1,16 +1,69 @@
 @import "_settings";
 
 header {
-  padding: 1rem;
+  //background: $black-rich;
+  color: $white-off;
+  width: 100%;
+
+  h1 {
+    margin: 0 0 1rem;
+    font-size: 24px;
+    font-weight: 400;
+    color: $white-grey;
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+      display: block;
+      clear: left;
+    }
+  }
+
+  .menu {
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+  }
+
+  > a {
+    display: flex;
+  }
+
+  .links {
+    font-size: 18px;
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: $neutron;
+
+    a {
+      display: block;
+      color: $white-off;
+
+      &.active {
+        color: $teal;
+        position: relative;
+        &::after {
+          content: "●";
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
 }
 
+
 .site-name {
-  padding: 2.5rem;
-  display: block;
   float: right;
+  padding: 2.5rem;
+  @include link($white, $white-off, $white, $white-off, none);
 
   a {
-    @include link($white, $white-off, $teal-light, $teal-light-alt, none);
+    display: block;
     text-decoration: none;
     font-family: 'Neutron Demo', sans-serif;
     //font-family: 'Roboto Mono', monospace;
@@ -22,7 +75,6 @@ header {
     text-shadow: 3px 3px 3px $dark;
     display: block;
     max-width: 30rem;
-    padding: 1rem;
     transition: text-shadow 1s ease-out;
 
     &:hover {

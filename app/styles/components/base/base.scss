@@ -1,4 +1,4 @@
-@import 'variables';
+@import '_settings';
 
 html {
   box-sizing: border-box;
@@ -8,41 +8,45 @@ html * {
   box-sizing: inherit;
 }
 
+html, body {
+  background: $black;
+  color: $white-off;
+}
 
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
   color: $grey-light;
-  //background-image: url(../images/pyramid-city-panorama.png);
-  background-size: contain;
+  background: url(images/city-top-dusk.jpg) #000 center top no-repeat;
+  background-size: cover;
   //background-repeat: no-repeat;
   //background-position: 50% 50%;
   //background-attachment: fixed
 }
 
 #dusk {
-  background: url(../images/city-top-dusk.jpg) #000 center top no-repeat;
+  background: url(assets/images/city-top-dusk.jpg) #000 center top no-repeat;
   background-size: 100% auto;
 }
 
 #night {
-  background: url(../images/city-top-night.jpg) #000 center top no-repeat;
+  background: url(assets/images/city-top-night.jpg) #000 center top no-repeat;
   background-size: 100% auto;
 }
 
 #dawn {
-  background: url(../images/city-top-dawn.jpg) #000 center top no-repeat;
+  background: url(assets/images/city-top-dawn.jpg) #000 center top no-repeat;
   background-size: 100% auto;
 }
 
 #day {
-  background: url(../images/city-top-day.jpg) #000 center top no-repeat;
+  background: url(assets/images/city-top-day.jpg) #000 center top no-repeat;
   background-size: 100% auto;
 }
 
 .layout,
-.header{
+.header {
   margin: 0 auto;
 }
 
