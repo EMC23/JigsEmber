@@ -1,0 +1,45 @@
+import Ember from 'ember';
+import config from './config/environment';
+
+const Router = Ember.Router.extend({
+  location: config.locationType,
+  rootURL: config.rootURL
+});
+
+Router.map(function() {
+  this.route('recipes', function() {
+    this.route('recipe', {path: '/:recipe_id'});
+  });
+  this.route('features', function() {
+    this.route('article', { path: '/:slug' });
+  });
+  this.route('about');
+  this.route('contact');
+  this.route('categories', function() {
+    this.route('category', { path: '/:category_id' });
+  });
+  this.route('articles', function() {
+    this.route('article', { path: '/:article_id' });
+  });
+  this.route('reviews', function() {
+    this.route('review', { path: '/:review_id' });
+  });
+  this.route('login');
+  this.route('loading');
+  this.route('notfound', {path: '*path'});
+
+  // style guide
+  this.route('freestyle');
+
+  this.route('tags', function() {
+    this.route('tag', { path: '/:tag_id' });
+  });
+  this.route('pages', function() {
+    this.route('page', {path: '/:page_id'});
+  });
+  this.route('phasers', function() {
+    this.route('phaser', {path: '/:page_id'});
+  });
+});
+
+export default Router;

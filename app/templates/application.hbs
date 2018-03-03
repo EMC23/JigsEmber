@@ -1,0 +1,16 @@
+{{ header-area }}
+
+{{!-- the content area displays here for the front page only --}}
+{{#if isIndexRoute}}
+    <div class="body">
+        index
+        {{outlet}}
+    </div>
+{{/if}}
+
+{{#unless isIndexRoute}}
+    other
+    <div class="body">
+        {{outlet}}
+    </div>
+{{/unless}}
